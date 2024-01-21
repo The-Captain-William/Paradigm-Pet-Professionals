@@ -1,0 +1,13 @@
+:root {
+    --nav-color: "blue";
+    --nav-secondary-color: "blue";
+    --background-color: whitesmoke;
+    --midground-bloc-color-one: white;
+    --button-bone-color: whitesmoke;
+    --button-generic-color: "blue";
+    --button-banner-color: "orange";
+}
+
+p {
+    font-family: "inter", sans-serif;
+}

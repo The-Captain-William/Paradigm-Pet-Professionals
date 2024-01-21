@@ -11,3 +11,40 @@
 p {
     font-family: "inter", sans-serif;
 }
+
+a {
+    font-family: "inter", sans-serif;
+}
+
+h1 {
+    font-family: "inter", sans-serif;
+    font-weight: 500;
+}
+
+.logo p {
+    font-size: 1.5rem;
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+}
+
+.left {
+    min-width: 433px;
+    min-height: 323px;
+}
+
+.hero-section {
+    display: flex;
+}
+
+.pexpert-opening {
+    display: flex;
+}
+
+.pet-card img {
+    min-width: 305px;
+    min-height: 324px;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 8px black;
+}
+

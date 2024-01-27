@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals - Ask a Pexpert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Start of desktop nav -->
+        <div class="header">
+            <nav>
+                <ul>
+                    <li>
+                        <div class="logo">
+                            <img src="/images/raster/logoicon.png" alt="Paradigm Pet Professionals Logo">
+                            <div class="logo-contents">
+                            <p>Paradigm</p>
+                            <p>Pet</p>
+                            <p>Professionals</p>
+                        </div>
+                        </div>
+                    </li>
+                    <!-- grouping https://docs.emmet.io/abbreviations/syntax/-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dog.html">Dogs</a></li>
+                    <li><a href="cat.html">Cats</a></li>
+                    <li><a href="fish.html">Fish</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="ask_a_pexpert.html">Ask a Pexpert</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li>
+                        <div class="search-entry">
+                            <form action="#">
+                                <input class="search-bar" type="text" placeholder="Search">
+                            </form>
+                            <button class="search-button">
+                                <img src="/images/vector/Search.svg" alt="search">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End of desktop nav -->
+
+        <div class="wrapper">
+            <div class="title form-title">
+                <h1>Meet with one of our Pexperts!</h1>
+            </div>
+            <div class="center-div">
+                <div class="form-intro basic-bloc">
+                    <p>
+                        Please fill out our contact form to request a consultation!<br>
+                        We will contact you within 48 hours to schedule.<br>
+                        All fields are required.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start of Form -->
+        <div class="wrapper">
+            <div class="center-div">
+            <form id="pexpert-form" action="#" method="post">
+                <div class="form-set">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-set">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-set">
+                    <label for="preferred-time">Preferred Time:</label>
+                    <input type="text" id="preferred-time" name="preferred_time">
+                </div>
+            
+                <div class="form-set">
+                    <label for="timezone">Timezone:</label>
+                    <input type="text" id="timezone" name="timezone">
+                </div>
+
+                <div class="form-set">
+                    <label for="pets-name">Pet's Name:<span class="credits"> (if inquiring for specific pet)</span></label>
+                    <input type="text" id="pets-name" name="pets_name" required>
+                </div>
+            
+                <div class="form-set">
+                    <label for="pet-type">Pet Type:</label>
+                    <select id="pet-type" name="pet_type">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="other">Fish</option>
+                        <option value="bird">Bird</option>
+                        <option value="reptile">Reptile</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-set">
+                    <label for="pet-age">Pet Age:</label>
+                    <select id="pet-age" name="pet_age">
+                        <option value="?">Unknown/Not sure</option>
+                        <option value="0-1">One year or younger</option>
+                        <option value="2-3">Two or three years old</option>
+                        <option value="4-5">Four or five years old</option>
+                        <option value="5+">Five years or older</option>
+                    </select>
+                </div>
+                
+                <div class="form-set">
+                    <label for="additional-info">Additional Info:</label>
+                    <textarea id="additional-info" name="additional_info"></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+        </div>
+
+        <!-- End of Form -->
+
+
+
+    <!-- Start of Footer -->
+    <div class="wrapper">
+        <footer>
+            <ul>
+                <li><a href="attribution.html">Attribution</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- End of Footer -->
+
+</body>
+</html>

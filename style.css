@@ -1,21 +1,44 @@
-/* Start of Colors */
+/* Start of Vars */
 :root {
+
+    /* Company Default */
+    --company-primary-1: #003B6D;
+    --company-primary-2: #6699CC;
+    
+    --company-secondary-1: #676767;
+    --company-secondary-2: #BDBDBD;
+
+    /* Fonts */
+    --font-style-basic: "inter", sans-serif;
+
+    /* Font Colors */
     --font-p-color: #F1F0E8;
     --font-h-color: #F1F0E8;
     --font-h-title-header-color: #F1F0E8;
     --font-a-color: #ADC4CE;
     
-    --nav-bloc-color: #96B6C5;
-    --nav-secondary-color: blue;
-    --background-color: whitesmoke;
-    --midground-bloc-color-one: #ADC4CE;
 
-    --button-stroke-color: black;
+    /* Navigation */
+    --nav-bloc-color: var(--company-primary-2);
+    --nav-secondary-color: blue;
+
+    /* Background and blocks */
+    --background-color: whitesmoke;    
+    --midground-bloc-color-one: var(--company-primary-2);
+
+    /* Buttons */
+    --button-stroke-color: var(--company-secondary-1);
     --button-bone-color: whitesmoke;
-    --button-generic-color: #ADC4CE;
-    --button-badge-color: #F1F0E8;
+    --button-generic-color: var(--company-secondary-2);
+    --button-badge-color: var(--company-secondary-2);
     
-    --font-style-basic: "inter", sans-serif;
+
+    /* Links */
+
+    /* Form headers */
+    --form-header-color: var(--company-secondary-2);
+
+
 
 }
 
@@ -26,7 +49,7 @@
 /* Start of Boilerplate */
 html {
     box-sizing: border-box;
-    background-color: #96B6C5;
+    background-color: var(--company-primary-1);
 }
 
 body {
@@ -45,16 +68,15 @@ body {
 }
 
 p {
-    font-family: "inter", sans-serif;
-
+    font-family: var(--font-style-basic);
 }
 
 a {
-    font-family: "inter", sans-serif;
+    font-family: var(--font-style-basic);
 }
 
 h1 {
-    font-family: "inter", sans-serif;
+    font-family: var(--font-style-basic);
     font-weight: 500;
 }
 
@@ -224,6 +246,13 @@ footer ul li a {
     text-decoration: none;
 }
 /* End of Footer */
+
+/* Credits */
+.credits {
+    font-size: .8rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
 
 /* Start of Landing Page Opening */
 .hero-section {
@@ -465,3 +494,74 @@ aside {
     font-size: 5rem;
     margin: 0;
 }
+
+/* End of Pet Pages */
+
+/* Start of Pexpert Page */
+.title.form p {
+    max-width: 10ch;
+}
+
+
+.title.form-title h1 {
+    font-size: 3rem;
+    color: var(--company-secondary-2);
+}
+
+
+.form-set {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.8rem;
+}
+
+.form-set label {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.3rem 0 0.3rem;
+    border-width: 2px 2px 0 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 22px 22px 0 0;
+    max-width: fit-content;
+    background-color: var(--form-header-color);
+}
+
+.form-set input, select, textarea {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0px 22px 22px 22px;
+    padding:0.125rem 0 0 1.2rem;
+    height: 1.5rem;
+}
+
+
+.form-set select {
+    height: 1.9rem;
+}
+
+.form-set textarea {
+    max-width: 60ch;
+    min-width: 60ch;
+}
+
+
+.center-div {
+    display: flex;
+    justify-content: center;
+}
+
+.form-intro {
+    max-width: fit-content;
+}
+
+.form-intro p {
+    max-width: 60ch;
+    text-align: center;
+}
+
+#pexpert-form {
+    margin-top: 2rem;
+}
+
+/* End of Pexpert Page */

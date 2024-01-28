@@ -20,7 +20,6 @@
 
     /* Navigation */
     --nav-bloc-color: #bfd3e7;
-    --nav-secondary-color: blue;
 
     /* Background and blocks */
     --background-color: whitesmoke;    
@@ -29,8 +28,8 @@
     /* Buttons */
     --button-stroke-color: var(--company-secondary-1);
     --button-bone-color: whitesmoke;
-    --button-generic-color: var(--button-badge-color);
-    --button-badge-color: var(--nav-bloc-color);
+    --button-generic-color: var(--company-secondary-2);
+    --button-badge-color: var(--company-secondary-2);
     
 
     /* Links */
@@ -87,12 +86,24 @@ h1 {
     font-weight: 500;
 }
 
-
+h2 {
+    margin: 0;
+    font-weight: 400;
+}
 
 .title {
     margin-top: 160px;
     display: flex;
     justify-content: center;
+}
+
+.title h2 {
+    font-family: var(--font-style-basic);
+    font-size: 2rem;
+}
+
+.title h2 a {
+    color: var(--font-h-title-header-color);
 }
 
 
@@ -152,13 +163,16 @@ h1 {
     cursor: pointer;
 }
 
+
 .bone-div {
     position: relative;
     transition: 200ms;
     height: fit-content;
     width: fit-content;
-    bottom: 75px;
+    bottom: 75px;    
 }
+
+
 
 .bone-div img {
     vertical-align: middle;
@@ -169,6 +183,10 @@ h1 {
     top: 155px;
     left: 125px;
     cursor: pointer;
+}
+
+.bone-div.submit-bone p {
+    left: 200px;
 }
 
 .bone-div:hover{
@@ -259,7 +277,11 @@ nav ul li a {
 
 /* Start of Footer */
 footer {
+    display: flex;
     margin-top: 160px;
+    padding: 1.2rem 0;
+    border-top: 4px solid black;
+    background-color: var(--company-primary-2);
 }
 
 footer ul {
@@ -332,6 +354,7 @@ footer ul li a {
     max-width: 305px;
     border-width: 2px;
     border-style: solid;
+    border-color: black;
     box-shadow: 0 8px black;
 }
 
@@ -497,7 +520,7 @@ aside {
 /* Start of Secondary Nav */
 .secondary-nav {
     border: 3px solid black;
-    background-color: var(--company-primary-2);
+    background-color: var(--nav-bloc-color);
     display: inline-block;
     padding: 1rem;
     border-radius: 44px;
@@ -567,6 +590,15 @@ aside {
 .pet-title h1 {
     font-size: 5rem;
     margin: 0;
+    color: var(--font-h-title-header-color);
+}
+
+#diet {
+    padding-right: 6rem;
+}
+
+#vaccines {
+    padding-left: 8rem;
 }
 
 /* End of Pet Pages */
@@ -579,7 +611,7 @@ aside {
 
 .title.form-title h1 {
     font-size: 3rem;
-    color: var(--company-secondary-2);
+    color: var(--font-h-title-header-color);
 }
 
 
@@ -639,3 +671,17 @@ aside {
 }
 
 /* End of Pexpert Page */
+
+
+/* Start of Attribution */
+
+h3 {
+    font-weight: 400;
+}
+
+#memory-pic {
+    max-width: 1200px;
+}
+
+
+/* End of Attribution */

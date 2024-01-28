@@ -19,7 +19,7 @@
     
 
     /* Navigation */
-    --nav-bloc-color: var(--company-primary-2);
+    --nav-bloc-color: #bfd3e7;
     --nav-secondary-color: blue;
 
     /* Background and blocks */
@@ -29,8 +29,8 @@
     /* Buttons */
     --button-stroke-color: var(--company-secondary-1);
     --button-bone-color: whitesmoke;
-    --button-generic-color: var(--company-secondary-2);
-    --button-badge-color: var(--company-secondary-2);
+    --button-generic-color: var(--button-badge-color);
+    --button-badge-color: var(--nav-bloc-color);
     
 
     /* Links */
@@ -73,7 +73,14 @@ p {
 
 a {
     font-family: var(--font-style-basic);
+    color: var(--company-primary-1);
 }
+
+a:visited {
+    color: var(--company-primary-1);
+}
+
+
 
 h1 {
     font-family: var(--font-style-basic);
@@ -145,7 +152,28 @@ h1 {
     cursor: pointer;
 }
 
+.bone-div {
+    position: relative;
+    transition: 200ms;
+    height: fit-content;
+    width: fit-content;
+    bottom: 75px;
+}
 
+.bone-div img {
+    vertical-align: middle;
+}
+
+.bone-div p {
+    position: absolute;
+    top: 155px;
+    left: 125px;
+    cursor: pointer;
+}
+
+.bone-div:hover{
+    transform: scale(1.1, 1.1);
+}
 
 /* End of Reusables */
 
@@ -161,21 +189,21 @@ h1 {
     background-color: var(--nav-bloc-color);
     border-style: solid;
     border-width: 0 0 3px 0;
-    z-index: 1;
+    z-index: 2;
 }
 
-.logo {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
+
 
 .logo img {
     max-height: 90px;
     align-self: center;
+    /* Align w.r.t middle so center is flush */
+    vertical-align: middle;
 }
 
 
+
+/* Not currently used */
 .logo p {
     font-size: 1.2rem;
     margin-top: 0.125rem;
@@ -297,6 +325,7 @@ footer ul li a {
 }
 
 
+
 .pet-card img {
     min-width: 305px;
     min-height: 324px;
@@ -329,6 +358,8 @@ footer ul li a {
 /* End of Pet Info Cards */
 
 /* Start of Adoption Cards */
+
+
 .badge-cards {
     background-color: var(--midground-bloc-color-one);
     border-radius: 80px;
@@ -338,15 +369,57 @@ footer ul li a {
     justify-content: space-around;
 }
 
-.badge {
-    fill: var(--button-badge-color);
-    stroke: var(--button-stroke-color);
-    width: 197px;
-    height: 409px;
+.badge-card {
+    position: relative;    
+    transition-duration: 200ms;
     cursor: pointer;
 }
 
+/* Here but not in use */
+.badge-card p {
+    padding: 0;
+    position: absolute;
+    left: 60px;
+    top: 200px;
+}
 
+.badge-card a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.badge-icon {
+    height: 170px;
+    left: 12px;
+    top: 15px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+}
+
+.badge-icon.save-the-snakes {
+    height: 225px;
+    border-radius: 0;
+    margin-top: -30px;
+    margin-left: -25px;
+}
+
+
+.badge {
+    fill: var(--button-badge-color);
+    stroke: black;
+    width: 197px;
+    height: 409px;
+    z-index: 1;
+}
+
+.badge-card:hover{
+    fill: var(--company-secondary-1);
+    transform-style: preserve-3d;
+    transform: scale(1.05, 1.05);
+    stroke-width: 2px;
+}
 
 
 .badge-cards .title h1 {
@@ -424,6 +497,7 @@ aside {
 /* Start of Secondary Nav */
 .secondary-nav {
     border: 3px solid black;
+    background-color: var(--company-primary-2);
     display: inline-block;
     padding: 1rem;
     border-radius: 44px;

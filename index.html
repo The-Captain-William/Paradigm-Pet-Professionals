@@ -16,12 +16,7 @@
             <ul>
                 <li>
                     <div class="logo">
-                        <img src="/images/raster/logoicon.png" alt="Paradigm Pet Professionals Logo">
-                        <div class="logo-contents">
-                        <p>Paradigm</p>
-                        <p>Pet</p>
-                        <p>Professionals</p>
-                    </div>
+                        <img src="images/raster/logos/newlogo.png" alt="">
                     </div>
                 </li>
                 <!-- grouping https://docs.emmet.io/abbreviations/syntax/-->
@@ -84,8 +79,15 @@
                     Need additional help determining which type of pet is right for you and your family?
                 </p>
                 <p>We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.</p>
-                <img class="bone" src="/images/vector/Bone.svg" alt="bone-button">
+                
+                <div class="bone-div">
+                    <a href="ask_a_pexpert.html">
+                        <p>Yes! Help me with my pet!</p>
+                        <img class="bone" src="/images/vector/Bone.svg" alt="bone-button">
+                    </a>
+                </div>
             </div>
+
         </div>
     </div>
     <!-- End of Pexpert CTA -->
@@ -100,15 +102,15 @@
                 <div class="flex-div">
                     <div class="pet-card">
                         <img src="/images/raster/cat.png" alt="An illustration of a cute black and white cat.">
-                        <button>Cats</button>
+                        <button onclick="location.href='cat.html'">Cats</button>
                     </div>
                     <div class="pet-card">
                         <img src="/images/raster/dog.png" alt="An illustration of a cute pomeranian dog.">
-                        <button>Dogs</button>
+                        <button onclick="location.href='dog.html'">Dogs</button>
                     </div>
                     <div class="pet-card">
                         <img src="/images/raster/fish.png" alt="An illustration of two goldfish">
-                        <button>Fish</button>
+                        <button onclick="location.href='fish.html'">Fish</button>
                     </div>
                 </div>
             </div>
@@ -124,31 +126,54 @@
                 <p>The following organizations can help you find and adopt the perfect companion:</p>
             </div>
             <div class="flex-div">
+            
                 <div class="badge-card">
-                    <svg class="badge">
-                        <use href="images/sprites.svg#Badge"></use>
-                    </svg>
+                    <a href="https://ftlob.rescuegroups.org/" target="_blank" >
+                        <img class="badge-icon" src="images/raster/logos/love-of-birds.jpg" alt="Love of Birds logo">
+                        <svg class="badge">
+                            <use href="images/sprites.svg#Badge"></use>
+                        </svg>
+                    </a>
                 </div>
+            
                 <div class="badge-card">
-                    <svg class="badge">
-                        <use href="images/sprites.svg#Badge"></use>
-                    </svg>
+                    <a href="https://savethesnakes.org/snakerescuecall/" target="_blank">
+                        <img class="badge-icon save-the-snakes" src="images/raster/logos/STS Logo.webp" alt="Save the Snakes logo">
+                        <svg class="badge">
+                            <use href="images/sprites.svg#Badge"></use>
+                        </svg>
+                    </a>
                 </div>
+                <!--  -->
                 <div class="badge-card">
-                    <svg class="badge">
-                        <use href="images/sprites.svg#Badge"></use>
-                    </svg>
+
+                    <a href="https://www.aspca.org/" target="_blank">
+                        <img class="badge-icon" src="images/raster/logos/aspca.jpg" alt="ASPCA logo">
+                        <svg class="badge">
+                            <use href="images/sprites.svg#Badge"></use>
+                        </svg>
+                    </a>
                 </div>
+                
                 <div class="badge-card">
-                    <svg class="badge">
-                        <use href="images/sprites.svg#Badge"></use>
-                    </svg>
+                    <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank" >
+                        <img class="badge-icon" src="images/raster/logos/sterling-animal-shelter.png" alt="Sterling Animal Shelter logo">
+                        <svg class="badge">
+                            <use href="images/sprites.svg#Badge"></use>
+                        </svg>
+                    </a>
                 </div>
+                
                 <div class="badge-card">
-                    <svg class="badge">
-                        <use href="images/sprites.svg#Badge"></use>
-                    </svg>
+                    <a href="https://theshelterpetproject.org/" target="_blank">
+                        <img class="badge-icon" src="images/raster/logos/pets-and-people-together.jpg" alt="Pets & People Together logo">
+                        <svg class="badge">
+                            <use href="images/sprites.svg#Badge"></use>
+                        </svg>
+                    </a>
+                    </div>
                 </div>
+            
             </div>
         </div>
     </div>
@@ -172,7 +197,12 @@
                 </p>
             </div>
             <div class="bottom">
-                <img class="bone" src="/images/vector/Bone.svg" alt="Adopt a Pet">
+                <div class="bone-div">
+                    <a href="ask_a_pexpert.html">
+                        <p>Yes! Help me adopt a pet!</p>
+                        <img class="bone" src="/images/vector/Bone.svg" alt="Adopt a Pet">
+                    </a>
+                </div>
             </div>
         </div>    
     </div>

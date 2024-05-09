@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradigm Pet Professionals - Ask a Pexpert</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paradigm Pet Professionals - Ask a Pexpert</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
         <!-- Start of desktop nav -->
         <div class="header">
             <nav>
-                <ul>
+                <ul id="main-nav-ul">
                     <li>
                         <div class="logo">
-                            <img src="images/raster/logos/newlogo.png" alt="">
+                            <div id="hamburger">☰</div>
+                            <img src="images/raster/logos/newlogo.png" alt>
                         </div>
                     </li>
                     <!-- grouping https://docs.emmet.io/abbreviations/syntax/-->
@@ -30,10 +32,12 @@
                     <li>
                         <div class="search-entry">
                             <form action="#">
-                                <input class="search-bar" type="text" placeholder="Search">
+                                <input class="search-bar" type="text"
+                                    placeholder="Search">
                             </form>
                             <button class="search-button">
-                                <img src="images/vector/Search.svg" alt="search">
+                                <img src="images/vector/Search.svg"
+                                    alt="search">
                             </button>
                         </div>
                     </li>
@@ -49,7 +53,8 @@
             <div class="center-div">
                 <div class="form-intro basic-bloc">
                     <p>
-                        Please fill out our contact form to request a consultation!<br>
+                        Please fill out our contact form to request a
+                        consultation!<br>
                         We will contact you within 48 hours to schedule.<br>
                         All fields are required.<br>
                     </p>
@@ -59,7 +64,7 @@
 
         <!-- Start of Form -->
         <div class="wrapper">
-            <div class="center-div">
+            <div class="center-div" id="pexpert-center-div">
                 <form id="pexpert-form" action="#" method="post">
                     <div class="form-set">
                         <label for="name">Name:</label>
@@ -73,19 +78,22 @@
 
                     <div class="form-set">
                         <label for="preferred-time">Preferred Time:</label>
-                        <input type="text" id="preferred-time" name="preferred_time">
+                        <input type="text" id="preferred-time"
+                            name="preferred_time">
                     </div>
-                
+
                     <div class="form-set">
                         <label for="timezone">Timezone:</label>
                         <input type="text" id="timezone" name="timezone">
                     </div>
 
                     <div class="form-set">
-                        <label for="pets-name">Pet's Name:<span class="credits"> (if inquiring for specific pet)</span></label>
-                        <input type="text" id="pets-name" name="pets_name" required>
+                        <label for="pets-name">Pet's Name:<span class="credits">
+                                (if inquiring for specific pet)</span></label>
+                        <input type="text" id="pets-name" name="pets_name"
+                            required>
                     </div>
-                
+
                     <div class="form-set">
                         <label for="pet-type">Pet Type:</label>
                         <select id="pet-type" name="pet_type">
@@ -108,17 +116,19 @@
                             <option value="5+">Five years or older</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-set">
                         <label for="additional-info">Additional Info:</label>
-                        <textarea id="additional-info" name="additional_info"></textarea>
+                        <textarea id="additional-info"
+                            name="additional_info"></textarea>
                     </div>
 
                     <div class="form-set">
                         <div class="bottom">
                             <div class="bone-div submit-bone">
                                 <p>Submit!</p>
-                                <img class="bone" src="images/vector/Bone.svg" alt="Adopt a Pet">
+                                <img class="bone" src="images/vector/Bone.svg"
+                                    alt="Adopt a Pet">
                             </div>
                         </div>
                     </div>
@@ -128,15 +138,13 @@
 
         <!-- End of Form -->
 
-
-
-    <!-- Start of Footer -->
-    <footer>
-        <ul>
-            <li><a href="attribution.html">Attribution</a></li>
-        </ul>
-    </footer>
-    <!-- End of Footer -->
-
-</body>
+        <!-- Start of Footer -->
+        <footer>
+            <ul>
+                <li><a href="attribution.html">Attribution</a></li>
+            </ul>
+        </footer>
+        <!-- End of Footer -->
+    </body>
+    <script src="main.js"></script>
 </html>

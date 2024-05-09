@@ -202,7 +202,7 @@ h2 {
     Pos fixed and top is 0px away from start of page. */
 .header {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top:0px;
     background-color: var(--nav-bloc-color);
     border-style: solid;
@@ -290,6 +290,8 @@ nav ul li a {
 }
 
 @media (max-width:1127px){
+
+    /* Shared Components and Index Page */
     .header {
         width: auto;
         height: fit-content;
@@ -306,11 +308,13 @@ nav ul li a {
         font-size: large;
         padding: 1rem 1rem;
         gap: 0.5rem;
+
     }
 
     .header nav ul li:not(:first-child){
         display: none;
     }
+
 
     .logo {
         display: flex;
@@ -335,6 +339,11 @@ nav ul li a {
         text-align: center;
     }
 
+    .title h1, p {
+        margin-left: 0 !important;
+    }
+
+
     .flex-div {
         flex-wrap: wrap;
         justify-content: center;
@@ -357,16 +366,118 @@ nav ul li a {
         height: auto;
     }
 
+
+    .pet-cards .title {
+        flex-direction: column;
+    }
+
     .badge-cards .title {
        flex-direction: column;
     }
 
+    /* Dogs Page  + Pet components*/
+
+    .flex-div:has(.secondary-nav) {
+        gap: 1rem;
+    }
+
+    .flex-div:has(.pet-image) {
+        gap: 1rem;
+    }
+
+    .title.pet-title.pet-sticker-container{
+        flex-direction: column;
+    }
+
+
+
+    .pet-sticker-image.sticker-dog {
+        position: absolute;
+        align-self: center;
+        left: 0.5vw;
+        bottom: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+
+    .title h2 a {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .basic-bloc {
+        margin: 0 !important;
+    }
+
+    .basic-bloc ul li {
+        padding-bottom: 0.2rem;
+    }
+
+    .basic-bloc ul li {
+        text-align: left;
+    }
+
+    /* Cat page */
+    .pet-sticker-image.sticker-cat {
+        position: absolute;
+        align-self: center;
+        left: 0.5vw;
+        bottom: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    /* Fish Page */
+    .pet-sticker-image.sticker-fish {
+        position: absolute;
+        align-self: center;
+        left: 10vw;
+        bottom: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    #fish-links {
+        max-width: 500px;
+        word-wrap: break-word;
+    }
 
     
 
 }
 
-@media (max-width: 686px) {
+@media (max-width: 682px) {
+         /* Form Submission */
+
+        .center-div {
+            padding: 0 1rem 0 1rem;
+        }
+
+        #pexpert-center-div {
+            display: flex;
+            flex-direction: column;
+            padding-left: 1rem;
+            padding-right: 1rem;
+         }
+         
+         #additional-info {
+            min-width: 0;
+         }
+    
+         .bone-div.submit-bone .bone {
+            width: 350px;
+         }
+
+         .bone-div.submit-bone p {
+            font-size: large;
+            bottom: 1ch;
+            left: 2ch;
+        }
+
+}
+
+@media (max-width: 679px) {
 
     .bone-div {
         margin: 0;
@@ -383,16 +494,36 @@ nav ul li a {
 
     }
 
+    #adopt {
+        text-align: center;
+        bottom: 23px;
+        left: 10px;
+
+    }
+
      .bone {
         width: 300px;
         margin: 0;
      }
 
 
+     /* Cats */
+
+     .pet-sticker-image {
+        left: 10vw !important;
+        bottom: -5vh;
+     }
+
+     .title.pet-title.pet-sticker-container {
+        margin-top: 230px;
+        margin-bottom: 60px;
+     }
+
+
 
 }
 
-@media (max-width: 510px) {
+@media (max-width: 560px) {
 
     .header {
         left: 0;
@@ -407,6 +538,8 @@ nav ul li a {
         min-height: auto;
     }
 
+
+
 }
 
 
@@ -417,6 +550,7 @@ footer {
     padding: 1.2rem 0;
     border-top: 4px solid black;
     background-color: var(--company-primary-2);
+    width: 100%;
 }
 
 footer ul {
@@ -639,6 +773,7 @@ footer ul li a {
 }
 
 .pet-sticker-container {
+    -webkit-text-stroke: 3px black;
     position: relative;
     z-index: 0;
 }

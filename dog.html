@@ -1,174 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradigm Pet Professionals - Dogs</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Start of desktop nav -->
-    <div class="header">
-        <nav>
-            <ul>
-                <li>
-                    <div class="logo">
-                        <img src="images/raster/logos/newlogo.png" alt="">
-                    </div>
-                </li>
-                <!-- grouping https://docs.emmet.io/abbreviations/syntax/-->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dog.html">Dogs</a></li>
-                <li><a href="cat.html">Cats</a></li>
-                <li><a href="fish.html">Fish</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="ask_a_pexpert.html">Ask a Pexpert</a></li>
-                <li><a href="#">F.A.Q</a></li>
-                <li>
-                    <div class="search-entry">
-                        <form action="#">
-                            <input class="search-bar" type="text" placeholder="Search">
-                        </form>
-                        <button class="search-button">
-                            <img src="images/vector/Search.svg" alt="search">
-                        </button>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <!-- End of desktop nav -->
-
-    <!-- Title Section -->
-    <div class="wrapper">
-        <div class="title  pet-title pet-sticker-container">
-            <img class="pet-sticker-image sticker-dog" src="images/raster/cool.png" alt="">
-            <h1>Dogs</h1>
-        </div>
-    </div>
-
-    <!-- Intro and links are together -->
-    <!-- Note, I could just use 'wrapper flex-div' here but then we will get margin collapse and 
-    it wont be flush with the rest of the page -->
-    <div class="wrapper">
-        <div class="flex-div">
-        <aside>
-            <!-- Secondary Nav -->
-            <div class="secondary-nav">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="dog.html#diet">Diet & Exercise</a></li>
-                    <li><a href="dog.html#grooming">Grooing & Handling</a></li>
-                    <li><a href="dog.html#vaccines">Vaccinations & Medicatons</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paradigm Pet Professionals - Dogs</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start of desktop nav -->
+        <div class="header">
+            <nav>
+                <ul id="main-nav-ul">
+                    <li>
+                        <div class="logo">
+                            <div id="hamburger">☰</div>
+                            <img src="images/raster/logos/newlogo.png" alt>
+                        </div>
+                    </li>
+                    <!-- grouping https://docs.emmet.io/abbreviations/syntax/-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dog.html">Dogs</a></li>
+                    <li><a href="cat.html">Cats</a></li>
+                    <li><a href="fish.html">Fish</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="ask_a_pexpert.html">Ask a Pexpert</a></li>
+                    <li><a href="#">F.A.Q</a></li>
+                    <li>
+                        <div class="search-entry">
+                            <form action="#">
+                                <input class="search-bar" type="text"
+                                    placeholder="Search">
+                            </form>
+                            <button class="search-button">
+                                <img src="images/vector/Search.svg"
+                                    alt="search">
+                            </button>
+                        </div>
+                    </li>
                 </ul>
-            </div>
-            <!-- Secondary Nav -->
-        </aside>
-            <div class="basic-bloc">
-                <p>
-                    The domestic dog is an extremely social animal and offers a diverse variety of choices as there are well over 300 breeds recognized by the World Canine Organization. Adopting a dog offers mutual benefits between dog and owner. Many studies cite the social benefits of having a companion as well as the reduced feelings of loneliness from adopting a dog. Studies even show medical indicators such as reduced blood pressure and improved lipid profiles. If you have a dog, it is important to make sure that you care for your dog; be mindful of what you feed your dog and provide enough opportunities for exercise. In this page, you will find more information about how to care for your pets throughout the various stages of their lives.                </p>
-            </div>
+            </nav>
+        </div>
+        <!-- End of desktop nav -->
+
+        <!-- Title Section -->
+        <div class="wrapper">
+            <div class="title  pet-title pet-sticker-container">
+                <img class="pet-sticker-image sticker-dog"
+                    src="images/raster/cool.png" alt>
+                <h1>Dogs</h1>
             </div>
         </div>
 
-    <!-- Start of diet & exercise -->
-    <div class="wrapper">
-        <div class="title">
-            <h2>
-            <a id="diet">
-                Diet & Exercise
-            </a>
-            </h2>
-        </div>
-        <div class="flex-div">
-            <!-- https://unsplash.com/photos/white-and-black-american-pitbull-terrier-bit-a-yellow-pig-toy-lying-on-grass-outdoor-during-daytime-A-YUeXZ1rq8 -->
-            <img class="pet-image" src="images/raster/pet-pages/dogs/justin-veenema-A-puppy-playing-unsplash.jpg" alt="Photo of black and white dog Huey by Justin Veenema.">
-            <div class="basic-bloc">
-                <p>
-                    Throughout dogs’ lifespans, they should generally be fed fewer meals as they mature. Puppies should be nursed the first two months, then introduced to three meals per day when they are about three to six months years old.
-                </p>
-                <p>
-                    Their food intake should be reduced to two meals per day when they are six months to one year old and finally reduced to one meal after they reach one year old. And a dog’s typical body mass is composed of somewhere between 60 and 70 percent water.
-                </p>
-                <p>
-                    The ASPCA says just a 10 percent decrease in body water can cause illness, and a 15 percent loss can cause death, so make sure you keep your pooch hydrated!
-                </p>
-                <p>
-                    <span class="credits">Photo by Justin Veenema</span>
-                </p>
-                
-            </div>
-        </div>
-    </div>
-    <!-- End of diet & exercise -->
-
-    <!-- Start of grooming & Handling -->
-    <div class="wrapper">
-        <div class="title">
-            <h2>
-                <a id="grooming">
-                    Grooming & Handling
-                </a>
-            </h2>
-        </div>
-        <div class="flex-div">
-            <!-- https://unsplash.com/photos/brown-pomeranian-wearing-pink-towel-ZVdZw2p08y4 -->
-            <img class="pet-image" src="images/raster/pet-pages/dogs/hayffield-l-dog-grooming-unsplash.jpg" alt="Photo of a brown pomeranian wearing a pink towel by Hayffield L">
-            <div class="basic-bloc">
-                <p>
-                    Keeping your furry family member clean is important to its health. So be sure to brush frequently to reduce the amount of shedding and prevent matted and tangled fur that can prove to be extremely difficult to remove. Check for insects such as ticks and fleas, especially after visiting heavily wooded areas.
-                </p>
-                <p>
-                    Bathing is not only important to your dog’s health but can be an exercise depending on how strong willed the dog is. Rinse all of the soap out, as any residual soap can result in a rash. Be sure the soap is formulated for your puppy or dog, since harsh soaps can cause allergic reactions.
-                </p>
-                <p>
-                    And as always, be careful how you handle your loved one. No matter the size of your dog, you need to be cautious as you carry your canine. If you have a small dog, then cradle the pup with one hand under the chest and the forearm supporting the back half. If it is a large dog, reach under the belly with both your arms perpendicular to the dog, and use each arm to support the chest and rear as you lift.
-                </p>
-                <p>
-                    <span class="credits">Photo by Hayffield L</span>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End of grooming & handling -->
-
-
-    <!-- Start of vaccinations & medications -->
-    <div class="wrapper">
-        <div class="title">
-            <h2>
-                <a id="vaccines">
-                    Vaccinations & Medicationss
-                </a>
-            </h2>
-        </div>
-        <div class="flex-div">
-            <!-- https://unsplash.com/photos/adult-black-pug-pOUA8Xay514 -->
-            <img class="pet-image" src="images/raster/pet-pages/dogs/charlesdeluvio-pOUA8Xay514-unsplash.jpg" alt="Toshi the black Pug by Charles Deluvio">
-            <div class="basic-bloc">
-                <p>
-                    You should always consult with your veterinarian, but there is a core set of vaccines that are typically recommended. Vaccines that reduce the exposure risk to things such as hepatitis, rabies, and parvovirus. Others may be determined by your vet depending on the environment in which the dog resides. Some of these include Bordetella bronchiseptica, Borrelia burgdorferi, and Leptospira bacteria.
-                </p>
-                <p>
-                    <span class="credits">Photo by Charles Deluvio</span>
-                </p>
+        <!-- Intro and links are together -->
+        <!-- Note, I could just use 'wrapper flex-div' here but then we will get margin collapse and 
+    it wont be flush with the rest of the page -->
+        <div class="wrapper">
+            <div class="flex-div">
+                <aside>
+                    <!-- Secondary Nav -->
+                    <div class="secondary-nav">
+                        <h2>Links</h2>
+                        <ul>
+                            <li><a href="dog.html#diet">Diet & Exercise</a></li>
+                            <li><a href="dog.html#grooming">Grooing &
+                                    Handling</a></li>
+                            <li><a href="dog.html#vaccines">Vaccinations &
+                                    Medicatons</a></li>
+                        </ul>
+                    </div>
+                    <!-- Secondary Nav -->
+                </aside>
+                <div class="basic-bloc">
+                    <p>
+                        The domestic dog is an extremely social animal and
+                        offers a diverse variety of choices as there are well
+                        over 300 breeds recognized by the World Canine
+                        Organization. Adopting a dog offers mutual benefits
+                        between dog and owner. Many studies cite the social
+                        benefits of having a companion as well as the reduced
+                        feelings of loneliness from adopting a dog.</p>
+                    <p>
+                        Studies even
+                        show medical indicators such as reduced blood pressure
+                        and improved lipid profiles. If you have a dog, it is
+                        important to make sure that you care for your dog; be
+                        mindful of what you feed your dog and provide enough
+                        opportunities for exercise. In this page, you will find
+                        more information about how to care for your pets
+                        throughout the various stages of their lives. </p>
                 </div>
+            </div>
         </div>
-    </div>
-    <!-- End of vaccinations & medications -->
 
-    <!-- Start of Footer -->
+        <!-- Start of diet & exercise -->
+        <div class="wrapper">
+            <div class="title">
+                <h2>
+                    <a id="diet">
+                        Diet & Exercise
+                    </a>
+                </h2>
+            </div>
+            <div class="flex-div">
+                <!-- https://unsplash.com/photos/white-and-black-american-pitbull-terrier-bit-a-yellow-pig-toy-lying-on-grass-outdoor-during-daytime-A-YUeXZ1rq8 -->
+                <img class="pet-image"
+                    src="images/raster/pet-pages/dogs/justin-veenema-A-puppy-playing-unsplash.jpg"
+                    alt="Photo of black and white dog Huey by Justin Veenema.">
+                <div class="basic-bloc">
+                    <p>
+                        Throughout dogs’ lifespans, they should generally be fed
+                        fewer meals as they mature. Puppies should be nursed the
+                        first two months, then introduced to three meals per day
+                        when they are about three to six months years old.
+                    </p>
+                    <p>
+                        Their food intake should be reduced to two meals per day
+                        when they are six months to one year old and finally
+                        reduced to one meal after they reach one year old. And a
+                        dog’s typical body mass is composed of somewhere between
+                        60 and 70 percent water.
+                    </p>
+                    <p>
+                        The ASPCA says just a 10 percent decrease in body water
+                        can cause illness, and a 15 percent loss can cause
+                        death, so make sure you keep your pooch hydrated!
+                    </p>
+                    <p>
+                        <span class="credits">Photo by Justin Veenema</span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- End of diet & exercise -->
+
+        <!-- Start of grooming & Handling -->
+        <div class="wrapper">
+            <div class="title">
+                <h2>
+                    <a id="grooming">
+                        Grooming & Handling
+                    </a>
+                </h2>
+            </div>
+            <div class="flex-div">
+                <!-- https://unsplash.com/photos/brown-pomeranian-wearing-pink-towel-ZVdZw2p08y4 -->
+                <img class="pet-image"
+                    src="images/raster/pet-pages/dogs/hayffield-l-dog-grooming-unsplash.jpg"
+                    alt="Photo of a brown pomeranian wearing a pink towel by Hayffield L">
+                <div class="basic-bloc">
+                    <p>
+                        Keeping your furry family member clean is important to
+                        its health. So be sure to brush frequently to reduce the
+                        amount of shedding and prevent matted and tangled fur
+                        that can prove to be extremely difficult to remove.
+                        Check for insects such as ticks and fleas, especially
+                        after visiting heavily wooded areas.
+                    </p>
+                    <p>
+                        Bathing is not only important to your dog’s health but
+                        can be an exercise depending on how strong willed the
+                        dog is. Rinse all of the soap out, as any residual soap
+                        can result in a rash. Be sure the soap is formulated for
+                        your puppy or dog, since harsh soaps can cause allergic
+                        reactions.
+                    </p>
+                    <p>
+                        And as always, be careful how you handle your loved one.
+                        No matter the size of your dog, you need to be cautious
+                        as you carry your canine. If you have a small dog, then
+                        cradle the pup with one hand under the chest and the
+                        forearm supporting the back half. If it is a large dog,
+                        reach under the belly with both your arms perpendicular
+                        to the dog, and use each arm to support the chest and
+                        rear as you lift.
+                    </p>
+                    <p>
+                        <span class="credits">Photo by Hayffield L</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End of grooming & handling -->
+
+        <!-- Start of vaccinations & medications -->
+        <div class="wrapper">
+            <div class="title">
+                <h2>
+                    <a id="vaccines">
+                        Vaccinations & Medications
+                    </a>
+                </h2>
+            </div>
+            <div class="flex-div">
+                <!-- https://unsplash.com/photos/adult-black-pug-pOUA8Xay514 -->
+                <img class="pet-image"
+                    src="images/raster/pet-pages/dogs/charlesdeluvio-pOUA8Xay514-unsplash.jpg"
+                    alt="Toshi the black Pug by Charles Deluvio">
+                <div class="basic-bloc">
+                    <p>
+                        You should always consult with your veterinarian, but
+                        there is a core set of vaccines that are typically
+                        recommended. Vaccines that reduce the exposure risk to
+                        things such as hepatitis, rabies, and parvovirus. Others
+                        may be determined by your vet depending on the
+                        environment in which the dog resides. Some of these
+                        include Bordetella bronchiseptica, Borrelia burgdorferi,
+                        and Leptospira bacteria.
+                    </p>
+                    <p>
+                        <span class="credits">Photo by Charles Deluvio</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End of vaccinations & medications -->
+
+        <!-- Start of Footer -->
         <footer>
             <ul>
                 <li><a href="attribution.html">Attribution</a></li>
             </ul>
         </footer>
-    <!-- End of Footer -->
+        <!-- End of Footer -->
 
-</body>
-<script src="main.js"></script>
-<script src="main.js"></script>
+    </body>
+    <script src="main.js"></script>
 </html>

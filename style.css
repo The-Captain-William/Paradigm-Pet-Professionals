@@ -221,6 +221,7 @@ h2 {
 
 
 
+
 /* Not currently used */
 .logo p {
     font-size: 1.2rem;
@@ -252,6 +253,7 @@ nav ul li a {
     padding: .125rem;
     padding-left: 1rem;
     margin-left: 0;
+    text-indent: 3ch;
 }
 
 .search-bar:focus {
@@ -273,7 +275,140 @@ nav ul li a {
     display: flex;
     justify-content: flex-start;
     padding: 0;
+    align-items: stretch;
+    /* block ==  top + bottom*/
+    /* inline == left + right*/
+    padding-block: 6px;
+    padding-inline: 2px;
 }
+
+#hamburger {
+    color: var(--company-primary-1);
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:1127px){
+    .header {
+        width: auto;
+        height: fit-content;
+        top: 1rem;
+        right:1rem;
+        border-width: 3px;
+        border-radius: 20px;
+        transition: 200ms ease-in-out;
+    }
+
+
+    .header nav ul{
+        flex-direction: column;
+        font-size: large;
+        padding: 1rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .header nav ul li:not(:first-child){
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    #hamburger {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 1rem;
+        transition: 200ms ease-in-out;
+    }
+
+    #hamburger:hover {
+        color: var(--button-bone-color)
+    }
+
+    .search-entry {
+        font-size: large;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .flex-div {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box-text {
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .left p, .right p {
+        text-align: center;
+    }
+
+    .left img, .right img {
+        margin: 0;
+        max-width: 100px;
+        width: auto;
+        height: auto;
+    }
+
+    .badge-cards .title {
+       flex-direction: column;
+    }
+
+
+    
+
+}
+
+@media (max-width: 686px) {
+
+    .bone-div {
+        margin: 0;
+        height: auto;
+        font-size: x-small;
+    }
+
+    .bone-div p {
+        position: absolute;
+        width: 30ch;
+        left: 30px;
+        bottom: 1ch;
+        margin: 0;
+
+    }
+
+     .bone {
+        width: 300px;
+        margin: 0;
+     }
+
+
+
+}
+
+@media (max-width: 510px) {
+
+    .header {
+        left: 0;
+        display: flex;
+        justify-self: center;
+
+    }
+
+
+    .left img, .right img {
+        min-width: 80vw;
+        min-height: auto;
+    }
+
+}
+
 
 /* Start of Footer */
 footer {

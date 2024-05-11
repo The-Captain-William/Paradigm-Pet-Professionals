@@ -432,7 +432,7 @@ nav ul li a {
     .pet-sticker-image.sticker-fish {
         position: absolute;
         align-self: center;
-        left: 10vw;
+        left: 4vw;
         bottom: 0;
         top: 0;
         z-index: -1;
@@ -447,7 +447,7 @@ nav ul li a {
 
 }
 
-@media (max-width: 682px) {
+@media (max-width: 688px) {
          /* Form Submission */
 
         .center-div {
@@ -473,6 +473,11 @@ nav ul li a {
             font-size: large;
             bottom: 1ch;
             left: 2ch;
+        }
+
+        #fish-links {
+            max-width: 60vw;
+            word-wrap: break-word;
         }
 
 }
@@ -540,6 +545,14 @@ nav ul li a {
 
 
 
+}
+
+@media (max-width: 420px) {
+    
+    .pet-image {
+        min-width: 90% !important;
+        max-width: 90% !important;
+    }
 }
 
 
@@ -767,10 +780,9 @@ footer ul li a {
 }
 
 .sticker-fish {
-    top: -200px;
-    left: 600px;
     transform: rotateZ(0);
 }
+
 
 .pet-sticker-container {
     -webkit-text-stroke: 3px black;
@@ -951,6 +963,7 @@ h3 {
 
 #memory-pic {
     max-width: 1200px;
+    width: 80vw;
 }
 
 

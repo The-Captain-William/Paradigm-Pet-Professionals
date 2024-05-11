@@ -229,12 +229,16 @@ h2 {
     margin-bottom: 0.125rem;
 }
 
-
+nav {
+    margin: 0 auto;
+    max-width: 2000px;
+    font-size: 1.5rem;
+}
 
 nav ul {
     display: flex;
     justify-content: space-around;
-    max-width: 2000px;
+    /* max-width: 2000px; */
     align-items: center;
     list-style: none;
     margin: 0;
@@ -254,6 +258,7 @@ nav ul li a {
     padding-left: 1rem;
     margin-left: 0;
     text-indent: 3ch;
+    font-size: 1.5rem;
 }
 
 .search-bar:focus {
@@ -262,6 +267,7 @@ nav ul li a {
 
 .search-button {
     border-radius: 0 20px 20px 0;
+    padding: .2rem .6rem .2rem .4rem;
     border: solid;
     border-width: 2px 1px 2px 2px;
     cursor: pointer;
@@ -282,11 +288,22 @@ nav ul li a {
     padding-inline: 2px;
 }
 
+.search-entry form {
+    display: flex;
+}
+
+
 #hamburger {
     color: var(--company-primary-1);
     font-size: 3rem;
     cursor: pointer;
     display: none;
+}
+
+@media (max-width: 1328px) {
+    nav {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width:1127px){

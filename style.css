@@ -548,10 +548,19 @@ nav ul li a {
 @media (max-width: 560px) {
 
     .header {
-        left: 0;
-        display: flex;
-        justify-self: center;
+        display: sticky;
+        top: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
 
+    .search-entry {
+        justify-content: center;
+
+    }
+
+    .search-bar {
+        width: 100%;
     }
 
 

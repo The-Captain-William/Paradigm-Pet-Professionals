@@ -151,47 +151,45 @@ h2 {
     padding-bottom: 20px;
 }
 
-.bottom p {
+.bottom-copy {
     max-width: 80%;
-}
-
-.bottom img {
-    margin-top: 130px;
+    margin-bottom: 2rem;
 }
 
 .bone {
     cursor: pointer;
 }
 
-
-.bone-div {
+.bone-container {
+    display: flex;
     position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transition: 200ms;
-    height: fit-content;
-    width: fit-content;
-    bottom: 75px;    
 }
 
-
-
-.bone-div img {
-    vertical-align: middle;
-}
-
-.bone-div p {
-    position: absolute;
-    top: 155px;
-    left: 125px;
-    cursor: pointer;
-}
-
-.bone-div.submit-bone p {
-    left: 200px;
-}
-
-.bone-div:hover{
+.bone-container:hover{
     transform: scale(1.1, 1.1);
 }
+
+.bone-link {
+    position: absolute;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+
+.bone {
+    width: 100%;
+}
+
 
 /* End of Reusables */
 
@@ -300,8 +298,14 @@ nav ul li a {
     display: none;
 }
 
+
+
 @media (max-width: 1328px) {
     nav {
+        font-size: 1rem;
+    }
+
+    .search-bar {
         font-size: 1rem;
     }
 }
@@ -381,6 +385,10 @@ nav ul li a {
         max-width: 100px;
         width: auto;
         height: auto;
+    }
+
+    .adoption-section .title h1 {
+        text-align: center !important;
     }
 
 
@@ -464,6 +472,13 @@ nav ul li a {
 
 }
 
+@media (max-width: 1044px) {
+    .adoption-section p:first-of-type {
+        text-align: center !important;
+    }
+}
+
+
 @media (max-width: 688px) {
          /* Form Submission */
 
@@ -478,19 +493,14 @@ nav ul li a {
             padding-right: 1rem;
          }
          
-         #additional-info {
+        #additional-info {
             min-width: 0;
-         }
-    
-         .bone-div.submit-bone .bone {
-            width: 350px;
-         }
-
-         .bone-div.submit-bone p {
-            font-size: large;
-            bottom: 1ch;
-            left: 2ch;
         }
+         
+        .form-set .bottom .bone-container {
+            width: 100%;
+        }
+
 
         #fish-links {
             max-width: 60vw;
@@ -500,12 +510,6 @@ nav ul li a {
 }
 
 @media (max-width: 679px) {
-
-    .bone-div {
-        margin: 0;
-        height: auto;
-        font-size: x-small;
-    }
 
     .bone-div p {
         position: absolute;
@@ -523,11 +527,14 @@ nav ul li a {
 
     }
 
-     .bone {
-        width: 300px;
-        margin: 0;
-     }
+    .bone-container {
+        width: 80%;
+    }
 
+    .bone-link {
+        font-size: medium;
+    }
+    
 
      /* Cats */
 
@@ -545,6 +552,7 @@ nav ul li a {
 
 }
 
+/* Mobile start */
 @media (max-width: 560px) {
 
     .header {
@@ -777,7 +785,7 @@ footer ul li a {
     align-self: center;
 }
 
-.adoption-section p:first-of-type {
+.right-adoption {
     text-align: right;
 }
 
@@ -977,6 +985,11 @@ aside {
 #pexpert-form {
     margin-top: 2rem;
 }
+
+.form-set .bottom .bone-container {
+    width: 100%;
+}
+
 
 /* End of Pexpert Page */
 
